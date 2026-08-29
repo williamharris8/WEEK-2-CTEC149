@@ -45,6 +45,25 @@
 
             console.log("Updated XP: ", experiencePoints);
 
+            let bossHealth = 100;
+
+            while (currentHealth > 0 && bossHealth > 0) {
+                bossHealth -= 35;
+                currentHealth -=35;
+                console.log("Hero HP: ", currentHealth, "Boss HP: ", bossHealth);
+            }
+
+            if (currentHealth <= 0 && bossHealth <= 0) {
+                console.log("Both go down!");
+            }
+
+            else if (bossHealth <=0) {
+                console.log("Hero wins!");
+            }
+            else {
+                console.log("Boss wins!")
+            }
+
         </script>
     </body>
 </html>
