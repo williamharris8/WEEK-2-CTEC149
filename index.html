@@ -24,6 +24,20 @@
             console.log("HP: ", currentHealth);
             console.log("XP: ", experiencePoints);
 
+            let powerLevel = (currentHealth * 0.5) + (experiencePoints * 10);
+            console.log("Starting PowerLevel: ", powerLevel);
+
+            currentHealth += 20;
+            experiencePoints += 50;
+
+            powerLevel = (currentHealth * 0.5) + (experiencePoints * 10);
+
+            console.log("New HP: ", currentHealth);
+
+            console.log("New XP: ", experiencePoints);
+
+            console.log("New PowerLevel: ", powerLevel);
+
         </script>
     </body>
 </html>
