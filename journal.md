@@ -1,0 +1,1 @@
+PHASE 1 - A variable declared with const is not able to be reassigned and would throw a TypeError.
